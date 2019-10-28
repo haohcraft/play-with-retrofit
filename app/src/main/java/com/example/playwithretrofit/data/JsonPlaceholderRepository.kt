@@ -1,11 +1,7 @@
 package com.example.playwithretrofit.data
 
 import android.util.Log
-import com.example.playwithretrofit.config.AppConfigDataSource
-import com.google.gson.Gson
-import okhttp3.OkHttpClient
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.example.playwithretrofit.data.model.StartedRepo
 
 
 interface JsonPlaceholderRepository {

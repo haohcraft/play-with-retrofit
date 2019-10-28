@@ -1,4 +1,4 @@
-package com.example.playwithretrofit.data
+package com.example.playwithretrofit.data.model
 
 data class StartedRepo(
     val id: Int,

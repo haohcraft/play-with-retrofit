@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.playwithretrofit.data.JsonPlaceholderRepository
-import com.example.playwithretrofit.data.StartedRepo
+import com.example.playwithretrofit.data.model.StartedRepo
 import kotlinx.coroutines.launch
 
 class StartedReposViewModel( private val jsonPlaceholderRepository: JsonPlaceholderRepository): ViewModel() {
