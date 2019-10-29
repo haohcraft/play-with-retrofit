@@ -1,7 +1,7 @@
 package com.example.playwithretrofit.data
 
-import android.util.Log
 import com.example.playwithretrofit.data.model.StartedRepo
+import timber.log.Timber
 
 
 interface JsonPlaceholderRepository {
@@ -17,8 +17,9 @@ class DefaultJsonPlaceholderRepository(private val jsonPlaceholderService: JsonP
     }
 
     override suspend fun getStartedRepoById(id: Int): StartedRepo {
+
         val response = jsonPlaceholderService.getStartedRepoById(id)
-        Log.i("MainActivity", "response is ${response}")
+        Timber.d("response is $response")
         return response.body()!!
     }
 

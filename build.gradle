@@ -32,4 +32,5 @@ ext {
     retrofitVersion = "2.6.2"
     okhttpVersion = "4.2.1"
     archLifecycleVersion = "2.1.0"
+    timberVersion = "4.7.1"
 }

@@ -8,11 +8,13 @@ import androidx.lifecycle.ViewModelProviders
 import com.example.playwithretrofit.ui.StartedReposViewModel
 import com.example.playwithretrofit.utils.InjectorUtils
 import kotlinx.android.synthetic.main.activity_main.*
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree())
         setContentView(R.layout.activity_main)
         init()
     }
